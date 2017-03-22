@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="학점을 계산해보세요"
+        android:textColor="#0000ff"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffc0cb">
+
+        <TableRow>
+            <TextView
+                android:text="국어"
+                android:padding="10dp"/>
+
+            <EditText
+                android:hint="점수 입력"
+                android:gravity="left"
+                android:id="@+id/enter_guk" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="수학"
+                android:padding="10dp"/>
+
+            <EditText
+                android:hint="점수 입력"
+                android:gravity="left"
+                android:id="@+id/enter_math"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="영어"
+                android:padding="10dp"/>
+
+            <EditText
+                android:hint="점수 입력"
+                android:gravity="left"
+                android:id="@+id/enter_eng"/>
+        </TableRow>
+
+        <Button
+            android:text="학점 계산"
+            android:id="@+id/calculate_score"/>
+
+        <Button
+            android:text="초기화"
+            android:id="@+id/initail"/>
+
+        <TableRow>
+            <TextView
+                android:text="총점" />
+
+            <TextView
+                android:text="0점"
+                android:id="@+id/score_total" />
+        </TableRow>
+
+        <TableRow>
+        <TextView
+            android:text="평균" />
+
+        <TextView
+            android:text="0점"
+            android:id="@+id/score_average" />
+        </TableRow>
+
+        <TableRow>
+        <TextView
+            android:text="학점" />
+
+        <ImageView
+            android:id="@+id/score_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"/>
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>
